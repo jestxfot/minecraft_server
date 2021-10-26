@@ -48,7 +48,7 @@ game <streaming/watching/listening> <name> [details] [extra text]       Set a cu
 typing  Simulate typing in selected channel.
 
 members List (max 100) members in selected guild
-invite create [expires] [max uses] ['temp'] OR invite accept <code> OR invite read <code> OR invite list OR invite revoke <code>        Create an invite, accept an existing one, see invite information, list all invites or revoke an invite.
+invite create [expires] [max uses] ['temp'] OR invite accept `code` OR invite read `code` OR invite list OR invite revoke `code` Create an invite, accept an existing one, see invite information, list all invites or revoke an invite.
 
 role list       List all roles in selected guild.
 role add <user id> <role id>    Add role to user
