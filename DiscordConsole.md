@@ -1,44 +1,44 @@
-help [search]   Show help menu. Optionally search.
-exit    Exit DiscordConsole
-exec    Execute a shell command
-run     Run a LUA file with DiscordConsole's special functions
-alias `command` `new command`   Add a new alias for a command.
-lang `language` Same as starting with --lang
-latency Shows the last heartbeat's ping.
-permcalc [preset]       Open the permission calculator, and optionally with pre-set values.
+- help [search]   Show help menu. Optionally search.
+- exit    Exit DiscordConsole
+- exec    Execute a shell command
+- run     Run a LUA file with DiscordConsole's special functions
+- alias `command` `new command`   Add a new alias for a command.
+- lang `language` Same as starting with --lang
+- latency Shows the last heartbeat's ping.
+- permcalc [preset]       Open the permission calculator, and optionally with pre-set values.
 
-guilds          List guilds/servers you're in.
-guild `id`      Select a guild to use for further commands.
-channels        List channels in your selected guild.
-channel `id`    Select a channel to use for further commands.
-pchannels       List private channels a.k.a. 'DMs'.
-vchannels       List voice channels in your selected guild.
-dm `user id`    Create a DM with specific user.
+- guilds          List guilds/servers you're in.
+- guild `id`      Select a guild to use for further commands.
+- channels        List channels in your selected guild.
+- channel `id`    Select a channel to use for further commands.
+- pchannels       List private channels a.k.a. 'DMs'.
+- vchannels       List voice channels in your selected guild.
+- dm `user id`    Create a DM with specific user.
 
-region `list/set` (`region`)    Set current guild region.
+- region `list/set` (`region`)    Set current guild region.
 
-info `user/guild/channel/settings` (for user: `id/@me`) [property] (or info u/g/c/s)    Get information about a user, server, channel or your set Discord settings!
-read `message id` [property]    Read or get info from a message. Properties: (empty), text, channel, timestamp, author, author_email, author_name, author_avatar, author_bot, embed; 'cache' may be used as message ID.
-pin `message id`        Pin a message to the current channel.
-unpin `message id`      Unpin a message from the current channel.
+- info `user/guild/channel/settings` (for user: `id/@me`) [property] (or info u/g/c/s)    Get information about a user, server, channel or your set Discord settings!
+- read `message id` [property]    Read or get info from a message. Properties: (empty), text, channel, timestamp, author, author_email, author_name, author_avatar, author_bot, embed; 'cache' may be used as message ID.
+- pin `message id`        Pin a message to the current channel.
+- unpin `message id`      Unpin a message from the current channel.
 
-name `name`     Change username completely.
-avatar `link/file`      Change avatar to a link or file.
+- name `name`     Change username completely.
+- avatar `link/file`      Change avatar to a link or file.
 
-say `stuff`     Send a message in your selected channel. `say toggle` starts chat-mode, and `toggle` ends it.
-${Placeholders}:        Replaces e.g. ${u.name} with ЙЦУКЕН - Бот.
-sayfile `path`  Send the contents of a file (auto-splitted).
-big `stuff`     Send a message, but attempt to make it using emojis!
-embed `json`    Send an embed! (ADVANCED!) See https://discordapp.com/developers/docs/resources/channel#embed-object
-tts `stuff`     Send a TTS message in your selected channel.
-file `file`     Upload file to selected channel.
+- say `stuff`     Send a message in your selected channel. `say toggle` starts chat-mode, and `toggle` ends it.
+- ${Placeholders}:        Replaces e.g. ${u.name} with ЙЦУКЕН - Бот.
+- sayfile `path`  Send the contents of a file (auto-splitted).
+- big `stuff`     Send a message, but attempt to make it using emojis!
+- embed `json`    Send an embed! (ADVANCED!) See https://discordapp.com/developers/docs/resources/channel#embed-object
+- tts `stuff`     Send a TTS message in your selected channel.
+- file `file`     Upload file to selected channel.
 
-edit `message id` `stuff`       Edit a message in your selected channel.
-editembed `message id` `json`   Edit a message embed in your selected channel.
-del `message id`        Delete a message in the selected channel.
-delall [since message id]       Bulk delete messages since a specific message
-log `directly/file` `amount OR filename`        Log the last few messages in console or to a file.
-react add/del `message id` `emoji unicode/id`   React to a message
+- edit `message id` `stuff`       Edit a message in your selected channel.
+- editembed `message id` `json`   Edit a message embed in your selected channel.
+- del `message id`        Delete a message in the selected channel.
+- delall [since message id]       Bulk delete messages since a specific message
+- log `directly/file` `amount OR filename`        Log the last few messages in console or to a file.
+- react add/del `message id` `emoji unicode/id`   React to a message
 react big `message id` `stuff`  Like the 'big' command, but in reactions!
 react delall `message id`       Delete all reactions
 
