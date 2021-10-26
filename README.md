@@ -2,4 +2,4 @@
 Бот: https://discord.com/developers/applications
 
 ## Плагины:
-`Chatty` плохой плагин, он ломает команду "/l"
+`Chatty` плохой плагин, он ломает команду `/l`
