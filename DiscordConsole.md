@@ -39,54 +39,54 @@
 - delall [since message id]       Bulk delete messages since a specific message
 - log `directly/file` `amount OR filename`        Log the last few messages in console or to a file.
 - react add/del `message id` `emoji unicode/id`   React to a message
-react big `message id` `stuff`  Like the 'big' command, but in reactions!
-react delall `message id`       Delete all reactions
+- react big `message id` `stuff`  Like the 'big' command, but in reactions!
+- react delall `message id`       Delete all reactions
 
-playing [game]  Set your playing status. Run without an argument to clear.
-streaming [url] [game]  Set your streaming status.
-game `streaming/watching/listening` `name` [details] [extra text]       Set a custom status.
-typing  Simulate typing in selected channel.
+- playing [game]  Set your playing status. Run without an argument to clear.
+- streaming [url] [game]  Set your streaming status.
+- game `streaming/watching/listening` `name` [details] [extra text]       Set a custom status.
+- typing  Simulate typing in selected channel.
 
-members List (max 100) members in selected guild
-invite create [expires] [max uses] ['temp'] OR invite accept `code` OR invite read `code` OR invite list OR invite revoke `code` Create an invite, accept an existing one, see invite information, list all invites or revoke an invite.
+- members List (max 100) members in selected guild
+- invite create [expires] [max uses] ['temp'] OR invite accept `code` OR invite read `code` OR invite list OR invite revoke `code` Create an invite, accept an existing one, see invite information, list all invites or revoke an invite.
 
-role list       List all roles in selected guild.
-role add `user id` `role id`    Add role to user
-role rem `user id` `role id`    Remove role from user
-role create     Create new role
-role edit `role id` `flag` `value`      Edit a role. Flags are: name, color, separate, perms, mention
-role delete `role id`   Delete a role.
+- role list       List all roles in selected guild.
+- role add `user id` `role id`    Add role to user
+- role rem `user id` `role id`    Remove role from user
+- role create     Create new role
+- role edit `role id` `flag` `value`      Edit a role. Flags are: name, color, separate, perms, mention
+- role delete `role id`   Delete a role.
 
-nick `id` [nickname]    Change somebody's nickname
-nickall [nickname]      Change ALL nicknames!
+- nick `id` [nickname]    Change somebody's nickname
+- nickall [nickname]      Change ALL nicknames!
 
-messages [scope]        Intercepting messages. Optionally, scope can have a filter on it: all, mentions, private, current (default), none
-intercept [yes/no]      Toggle intercepting 'console.' commands in Discord.
-output [yes/no] Toggle showing 'console.' outputs directly in Discord.
-back    Jump to previous guild and/or channel.
+- messages [scope]        Intercepting messages. Optionally, scope can have a filter on it: all, mentions, private, current (default), none
+- intercept [yes/no]      Toggle intercepting 'console.' commands in Discord.
+- output [yes/no] Toggle showing 'console.' outputs directly in Discord.
+- back    Jump to previous guild and/or channel.
 
-new `channel/vchannel/guild/category` `name`    Create a new guild or channel
-bans [text]     List all bans, can also be shown in text form to show full ban reasons.
-ban `user id` `optional reason` Ban user
-unban `user id` Unban user
-kick `user id` `optional reason`        Kick user
-leave [id]      Leave a guild! Run with no arguments to leave the selected one.
-ownership `id`  Transfer ownership.
+- new `channel/vchannel/guild/category` `name`    Create a new guild or channel
+- bans [text]     List all bans, can also be shown in text form to show full ban reasons.
+- ban `user id` `optional reason` Ban user
+- unban `user id` Unban user
+- kick `user id` `optional reason`        Kick user
+- leave [id]      Leave a guild! Run with no arguments to leave the selected one.
+- ownership `id`  Transfer ownership.
 
-delete `guild/channel/category` `id`    Delete a channel, guild or category.
+- delete `guild/channel/category` `id`    Delete a channel, guild or category.
 
-play `dca audio file`   Plays a song in the selected voice channel
-stop    Stops playing any song.
-move `user id` `vchannel id`    Move a user to another voice channel.
+- play `dca audio file`   Plays a song in the selected voice channel
+- stop    Stops playing any song.
+- move `user id` `vchannel id`    Move a user to another voice channel.
 
-status `value`  Set the user status. Possible values are: online, idle, dnd and invisible.
+- status `value`  Set the user status. Possible values are: online, idle, dnd and invisible.
 
-friend `add/accept/remove/list` (`user id`)     Manage your friends. Add, accept, remove and list them.
-block `user id` Block a user.
-note `user id` `note`   Set a note. Remove with `note `user id` ""`.
+- friend `add/accept/remove/list` (`user id`)     Manage your friends. Add, accept, remove and list them.
+- block `user id` Block a user.
+- note `user id` `note`   Set a note. Remove with `note `user id` ""`.
 
-bookmarks       List all bookmarks in the console.
-bookmark `name` Create new bookmark out of current location. If the name starts with -, it removes the bookmark.
-go `bookmark`   Jump to the specified bookmark.
+- bookmarks       List all bookmarks in the console.
+- bookmark `name` Create new bookmark out of current location. If the name starts with -, it removes the bookmark.
+- go `bookmark`   Jump to the specified bookmark.
 
-rl [full]       Reload cache. If 'full' is set, it also restarts the session.
+- rl [full]       Reload cache. If 'full' is set, it also restarts the session.
