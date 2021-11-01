@@ -20,7 +20,7 @@
 
 Нашел список опасных плагинов: EssentialsBackUp, PixelRandomTeleport, PixelCmdBlock и FunnyAntiDCP
 
-## DiscordSRV: сообщения дублируются в чате дискорда?
+## Сообщения DiscordSRV дублируются в канале дискорда?
 ![image](https://user-images.githubusercontent.com/87380272/139683975-4466ce99-256e-47c9-b1e6-012a4c50dbe8.png)
 
 Настройте в конфиге опцию `VentureChat-Bungee` в положение `true`
