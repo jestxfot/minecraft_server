@@ -10,6 +10,7 @@
 - DiscordSRV https://github.com/DiscordSRV/DiscordSRV
 - MOTD https://www.spigotmc.org/resources/motd-1-8-1-15.8390/
 - AuthMeReloaded https://github.com/AuthMe/AuthMeReloaded
+- Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723/
 
 # Прочее
 ＡＢＣＤＥＦＧＨＩＪＫＬＭＬＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ
