@@ -26,3 +26,6 @@
 ![image](https://user-images.githubusercontent.com/87380272/139683975-4466ce99-256e-47c9-b1e6-012a4c50dbe8.png)
 
 Настройте в конфиге опцию `VentureChat-Bungee` в положение `true`
+
+### WorldEdit "editing on unsupported versions is disabled"
+https://github.com/EngineHub/WorldEdit/blob/master/CHANGELOG.txt#L11
