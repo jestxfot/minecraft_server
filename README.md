@@ -1,4 +1,4 @@
-# Майнкрафт и всё что с ним связано
+# MineWiki: Minecraft Server Wiki
 Бот: https://discord.com/developers/applications
 
 ## Список лучших плагинов
