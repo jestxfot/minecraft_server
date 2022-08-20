@@ -13,6 +13,10 @@
 - Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723/
 - Захват чанков https://dev.bukkit.org/projects/mychunk
 
+## Run
+```
+ngrok tcp 25565 
+```
 ## Прочее
 ＡＢＣＤＥＦＧＨＩＪＫＬＭＬＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ
 
