@@ -4,7 +4,7 @@
 ## Плагины:
 `Chatty` плохой плагин, он ломает команду `/l`
 
-# Список лучших плагинов
+## Список лучших плагинов
 - ChatEx (аналог ChatGuard и Chatty) https://github.com/TheJeterLP/ChatEx
 - MCrcon https://github.com/Tiiffi/mcrcon (для русского языка в начале введите chcp 65001)
 - DiscordSRV https://github.com/DiscordSRV/DiscordSRV
@@ -13,7 +13,7 @@
 - Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723/
 - Захват чанков https://dev.bukkit.org/projects/mychunk
 
-# Прочее
+## Прочее
 ＡＢＣＤＥＦＧＨＩＪＫＬＭＬＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ
 
 ![image](https://user-images.githubusercontent.com/87380272/139599480-07e302b1-b953-4635-85af-d4233d31adc5.png)
