@@ -4,7 +4,6 @@ https://dev.bukkit.org/projects/worldguard/files
 <br>
 https://dev.bukkit.org/projects/worldedit/files
 <br>
-<br>
 https://github.com/AuthMe/AuthMeReloaded
 <br>
 https://www.spigotmc.org/resources/motd-1-8-1-15.8390
