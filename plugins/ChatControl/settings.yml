@@ -86,7 +86,7 @@ Anti_Spam:
 
     # If a command is similar (in percents) to the previous one, block it.
     # Set to 0 or 100 to disable.
-    Similar_Percentage_Block: 80
+    Similar_Percentage_Block: 0
     
     # Should regular expressions be supported in Whitelist_Similarity and Whitelist_Delay?
     # ! Can lead to unexpected behavior.
