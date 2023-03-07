@@ -1,3 +1,6 @@
+## Dependent libraries
+https://www.spigotmc.org/resources/vault.34315/
+
 ## Admin
 https://github.com/EssentialsX/Essentials/releases
 <br>
