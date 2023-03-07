@@ -10,6 +10,8 @@ https://github.com/AuthMe/AuthMeReloaded
 https://www.spigotmc.org/resources/motd-1-8-1-15.8390
 <br>
 ChatEx (аналог ChatGuard и Chatty): https://github.com/TheJeterLP/ChatEx
+<br>
+https://github.com/TheBlackEntity/PlugMan/
 
 ## Fun
 Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723
