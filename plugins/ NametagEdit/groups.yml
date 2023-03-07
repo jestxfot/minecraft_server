@@ -1,11 +1,5 @@
 Groups:
-  Admin:
-    Permission: nte.admin
-    Prefix: '&c'
+  Default:
+    Prefix: '&r[&7Гей&r] '
     Suffix: '&f'
     SortPriority: 1
-  Moderator:
-    Permission: nte.moderator
-    Prefix: '&2'
-    Suffix: '&f'
-    SortPriority: 2
