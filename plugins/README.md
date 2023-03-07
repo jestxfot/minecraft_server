@@ -12,6 +12,8 @@ https://www.spigotmc.org/resources/motd-1-8-1-15.8390
 ChatEx (аналог ChatGuard и Chatty): https://github.com/TheJeterLP/ChatEx
 <br>
 https://github.com/TheBlackEntity/PlugMan/
+<br>
+https://www.spigotmc.org/resources/titlemanager.1049/
 
 ## Fun
 Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723
