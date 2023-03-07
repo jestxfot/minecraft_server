@@ -17,6 +17,8 @@ https://github.com/TheBlackEntity/PlugMan/
 Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723
 <br>
 Захват чанков https://dev.bukkit.org/projects/mychunk
+<br>
+https://www.spigotmc.org/resources/plasmo-voice-server.91064/
 
 ## Integration
 MCrcon https://github.com/Tiiffi/mcrcon (для русского языка в начале введите chcp 65001)
