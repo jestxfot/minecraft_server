@@ -9,7 +9,7 @@ https://github.com/AuthMe/AuthMeReloaded
 <br>
 https://www.spigotmc.org/resources/motd-1-8-1-15.8390
 <br>
-ChatEx (аналог ChatGuard и Chatty): https://www.spigotmc.org/resources/chatex-continued.71041/
+ChatControl (аналог ChatGuard и Chatty и ChatEx): https://github.com/kangarko/ChatControl-Free
 <br>
 https://github.com/TheBlackEntity/PlugMan/
 <br>
