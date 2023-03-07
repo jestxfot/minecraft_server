@@ -14,6 +14,8 @@ ChatControl (аналог ChatGuard и Chatty и ChatEx): https://github.com/kan
 https://github.com/TheBlackEntity/PlugMan/
 <br>
 https://www.spigotmc.org/resources/titlemanager.1049/
+<br>
+https://www.spigotmc.org/resources/nametagedit.3836/
 
 ## Fun
 Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723
