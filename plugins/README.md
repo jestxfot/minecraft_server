@@ -4,9 +4,9 @@ https://www.spigotmc.org/resources/vault.34315/
 ## Admin
 https://github.com/EssentialsX/Essentials/releases
 <br>
-https://dev.bukkit.org/projects/worldguard/files
-<br>
 https://dev.bukkit.org/projects/worldedit/files
+<br>
+https://dev.bukkit.org/projects/worldguard/files (*нужен WorldEdit!*)
 <br>
 https://github.com/AuthMe/AuthMeReloaded
 <br>
