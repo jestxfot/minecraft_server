@@ -62,10 +62,10 @@ Anti_Spam:
     # Delay in seconds. Set to 0 to disable.
     Delay_Between_Commands: 2
     
-    # If a message is similar (in percents) to the previous one, block it.
-    # Set to 0 or 100 to disable.
-    # We keep in mind that commands like /tell includes always name, making the check less annonying.
-    Similar_Percentage_Block: 80
+    # Если сообщение похоже (в процентах) на предыдущее, блокируйте его.
+    # Установите значение 0 или 100, чтобы отключить.
+    # Мы помним, что команды типа /tell всегда включают имя, что делает проверку менее раздражающей.
+    Similar_Percentage_Block: 0
  
     # Commands ignored from the delay check.
     Whitelist_Similarity:
