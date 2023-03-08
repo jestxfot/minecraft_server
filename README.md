@@ -14,6 +14,8 @@ ngrok tcp 25565
 
 ![image](https://user-images.githubusercontent.com/87380272/139599480-07e302b1-b953-4635-85af-d4233d31adc5.png)
 
+https://minecraftitemids.com/color-codes
+
 ![image](https://user-images.githubusercontent.com/87380272/139599489-f99ea2b2-e13c-494d-8b26-6762acc68604.png)
 
 Нашел список опасных плагинов: EssentialsBackUp, PixelRandomTeleport, PixelCmdBlock и FunnyAntiDCP
