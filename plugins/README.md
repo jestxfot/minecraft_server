@@ -9,6 +9,9 @@ https://www.spigotmc.org/resources/protocollib.1997/ (https://ci.dmulloy2.net/jo
 https://www.spigotmc.org/resources/placeholderapi.6245/
 
 ## Admin
+
+https://github.com/PEXPlugins/PermissionsEx
+<br>
 https://github.com/EssentialsX/Essentials/releases
 <br>
 https://dev.bukkit.org/projects/worldedit/files
