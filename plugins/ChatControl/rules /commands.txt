@@ -6,7 +6,7 @@
 # For help, see notes in rules.txt file.
 # -------------------------------------------------------------------------------
 
-# Prevent /op command, but ignore other commands that start with /op, like /openinv
+# Запретить команду /op, но игнорировать другие команды, начинающиеся с /op, например /openinv
 match ^/op\b
 ignore perm chatcontrol.bypass.rules
 id /op
