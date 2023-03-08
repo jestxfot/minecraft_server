@@ -17,13 +17,18 @@ groups:
       prefix: '&r[&cСиний&r] '
     permissions:
     - modifyworld.*
+  op:
+    options:
+      default: true
+      prefix: '&r[&4OP&r] '
+    permissions:
+    - -chatcontrol.bypass.*    
+    - '*'
 schema-version: 1
 users:
   6ab842c9-9887-38ca-931f-e0e3b8515348:
     permissions:
-    - -chatcontrol.bypass.*
-    - '*'
     group:
-    - default
+    - OP
     options:
-      name: JestX
+      name: default
