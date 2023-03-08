@@ -108,16 +108,16 @@ Chat:
 
     # Default chat message format.
     # The prefix has to include the 'pl_' because without it the plugin's prefix name will be given instead.
-    Message_Format: '{pl_prefix}{nick}:{pl_suffix} {message}'
+    Message_Format: '{pl_prefix}{nick} ➾{pl_suffix} {message}'
 
     # If Ranged_Mode is enabled, this format is used when a message is printed to the global chat by prefixing it with '!'
     # NB: Player must also have the 'chatcontrol.chat.global' permission to speak to the global chat.
-    Global_Message_Format: '&8[GLOBAL]&f {pl_prefix}{nick}:{pl_suffix} {message}'
+    Global_Message_Format: '&e[G]&f {pl_prefix}{nick} ➾{pl_suffix} {message}'
 
     # If Ranged_Mode is enabled, this format is used when a player with 'chatcontrol.chat.spy' permission receives ranged message
     # that he normally should't see.
     # To spy on private messages (e.g. /tell or /mail), use Essentials /socialspy feature.
-    Spy_Message_Format: '&8SPY: [{world}&8]&f {pl_prefix}{nick}:{pl_suffix} {message}'
+    Spy_Message_Format: '&8SPY: [{world}&8]&f {pl_prefix}{nick} ➾{pl_suffix} {message}'
 
     # If enabled and a players write a message, it will only be sent to players
     # within distance of the player specified in Range
@@ -127,16 +127,12 @@ Chat:
     Range: 100.0
 
   Grammar:
-    # Punctualize every sentence. Ignores URLs.
-    Insert_Dot:
+    Insert_Dot: # Пунктуация в каждом предложении. Игнорирует URL-адреса.
       Enabled: true
       Min_Message_Length: 5
-
-    # Make the first letter of a sentence big. Ignores URLs.
-    Capitalize:
+    Capitalize: # Сделать первую букву предложения большой. Игнорирует URL-адреса.
       Enabled: true
       Min_Message_Length: 5
-
 Clear:
   # Broadcast that the chat was wiped?
   Broadcast: true
@@ -148,11 +144,11 @@ Clear:
   Console_Lines_To_Clear: 300
 
 Messages:
-  # Use 'default' to not modify, 'hide' to not display or write a custom message
-  # Variables: {player} {pl_suffix} {pl_prefix} (when Vault is installed)
-  # {countrycode} and {countryname} when AuthMe is installed
-  Join: default
-  Quit: default
+  # Используйте 'default', чтобы не изменять, 'hide', чтобы не отображать или написать пользовательское сообщение.
+  # Переменные: {player} {pl_suffix} {pl_prefix} (когда установлен Vault)
+  # {countrycode} и {countryname}, если установлен AuthMe
+  Join: '&a&l+ &r{pl_suffix}{player} заремнантился!'
+  Quit: '&c&l- &r{pl_suffix}{player} схлопнулся!'
   Kick: default
   
   # Needs AuthMe-Reloaded. Only display quit message when the player has logged.
