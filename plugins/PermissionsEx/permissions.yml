@@ -29,6 +29,6 @@ users:
   6ab842c9-9887-38ca-931f-e0e3b8515348:
     permissions:
     group:
-    - OP
+    - default
     options:
-      name: default
+      name: JestX
