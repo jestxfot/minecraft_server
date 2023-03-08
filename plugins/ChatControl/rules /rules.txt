@@ -14,14 +14,14 @@
 # (Выбирается случайным образом из сообщений, разделенных на |)
 # then rewrite <message|message2> (Сообщение, которое заменяет все проверяемое сообщение).
 # (Выбирается случайным образом из сообщений, разделенных |)
-# then deny (Cancel the player's message from appearing. See settinsg.yml for configuration on specific events.)
-# then console <command|command2|command3> (Commands to execute as the console. Use {player} to get player's name. Split multiple commands by |)
-# then warn <message> (A message sent to the player.)
-# then kick <optionalResaon> (Kick the player with an optional message.)
-# then notify <permission> <message> (Send a message to all players with the permission.)
-# then fine <amount> (If Vault is installed - take specified amount of money from the player.)
-# then log (Caught message will be printed in console and saved in logs/rules.txt)
-# handle as <handler_name> (Launch actions specified in handlers.yml. NOTICE: This must be as a last operator in the rule!)
+# then deny (Отмена появления сообщения игрока. Смотрите settinsg.yml для настройки на конкретные события).
+# then console <command|command2|command3> (Команды для выполнения в качестве консоли. Используйте {player} для получения имени игрока. Разделите несколько команд |)
+# then warn <сообщение> (Сообщение, отправляемое игроку).
+# then kick <optionalResaon> (Ударить игрока с необязательным сообщением).
+# then notify <permission> <message> (Послать сообщение всем игрокам с данным разрешением).
+# then fine <amount> (Если установлено Vault - взять с игрока указанную сумму денег).
+# then log (Пойманное сообщение будет выведено в консоль и сохранено в logs/rules.txt)
+# handle as <имя_руководителя> (Запуск действий, указанных в файле handlers.yml. ВНИМАНИЕ: Это должно быть последним оператором в правиле!)
 #
 # Valid variables:
 # {player} (Player's name. Without prefix and suffix.)
