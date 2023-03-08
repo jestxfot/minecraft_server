@@ -49,7 +49,7 @@ hide-displayname-in-vanish: true
 # Disable this if you have any other plugin, that modifies the displayname of a user.
 change-displayname: true
 
-# This option will cause Essentials to show players' displaynames instead of usernames when tab completing Essentials commands.
+# Эта опция заставит Essentials показывать имена игроков вместо имен пользователей при завершении команд Essentials.
 change-tab-complete-name: false
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
@@ -322,10 +322,10 @@ player-commands:
   - worth
   - xmpp
 
-# Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
-# This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
-# If you wish to use EssentialsX's built-in permissions using the `player-commands` section above, set this to false.
-# Default is true.
+# Используйте эту опцию, чтобы заставить обработчик разрешений, основанный на суперпермах, независимо от обнаруженного установленного плагина perms.
+# Это полезно, если вам нужны разрешения на основе superperms (с подстановочными знаками) для пользовательских плагинов разрешений.
+# Если вы хотите использовать встроенные разрешения EssentialsX, используя раздел `player-commands` выше, установите false.
+# По умолчанию - true.
 use-bukkit-permissions: true
 
 # When this option is enabled, one-time use kits (ie. delay < 0) will be
@@ -790,7 +790,7 @@ confirm-home-overwrite: false
 # You can control the values of items that are sold to the server by using the /setworth command.
 
 # Defines the balance with which new players begin. Defaults to 0.
-starting-balance: 0
+starting-balance: 1000
 
 # Defines the cost to use the given commands PER USE.
 # Some commands like /repair have sub-costs, check the wiki for more information.
