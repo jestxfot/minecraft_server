@@ -5,6 +5,18 @@ groups:
       prefix: '&r[&7Гей&r] '
     permissions:
     - modifyworld.*
+  blue:
+    options:
+      default: true
+      prefix: '&r[&7Голубой&r] '
+    permissions:
+    - modifyworld.*
+  red:
+    options:
+      default: true
+      prefix: '&r[&cСиний&r] '
+    permissions:
+    - modifyworld.*
 schema-version: 1
 users:
   6ab842c9-9887-38ca-931f-e0e3b8515348:
