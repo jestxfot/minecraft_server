@@ -8,7 +8,7 @@ groups:
   blue:
     options:
       default: true
-      prefix: '&r[&7Голубой&r] '
+      prefix: '&r[&bГолубой&r] '
     permissions:
     - modifyworld.*
   red:
@@ -23,5 +23,7 @@ users:
     permissions:
     - -chatcontrol.bypass.*
     - '*'
+    group:
+    - default
     options:
       name: JestX
