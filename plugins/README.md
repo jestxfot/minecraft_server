@@ -1,5 +1,7 @@
 ## Dependent libraries
 https://www.spigotmc.org/resources/vault.34315/
+<br>
+https://www.spigotmc.org/resources/placeholderapi.6245/
 
 ## Admin
 https://github.com/EssentialsX/Essentials/releases
