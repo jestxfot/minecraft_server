@@ -381,10 +381,8 @@ Hooks:
     # Do we need to force /motd Essentials command on join?
     useEssentialsMotd: false
 Protection:
-    # Enable some servers protection (country based login, antibot)
-    enableProtection: false
-    # Apply the protection also to registered usernames
-    enableProtectionRegistered: true
+    enableProtection: false    # Включите некоторую защиту серверов (вход на основе страны, антибот)
+    enableProtectionRegistered: true    # Применить защиту также к зарегистрированным именам пользователей
     geoIpDatabase:
         # The MaxMind clientId used to download the GeoIp database,
         # get one at https://www.maxmind.com/en/accounts/current/license-key
