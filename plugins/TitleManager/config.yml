@@ -181,7 +181,7 @@ placeholders:
 # Sets the scoreboard (sidebar) that is sent to the player
 
 scoreboard:
-  enabled: false
+  enabled: false # ВЫКЛЮЧАЙТЕ, ТАК КАК НЕ РАБОТАЕТ НА 1.19+!
 
   # The title displayed at the very top of the scoreboard
   # WARNING! (1.12 or below ONLY) The title must consist of 32 or less characters (this includes color codes)
