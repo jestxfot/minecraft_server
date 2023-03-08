@@ -10,7 +10,7 @@ https://www.spigotmc.org/resources/placeholderapi.6245/
 
 ## Admin
 
-https://www.spigotmc.org/resources/luckperms.28140/
+https://github.com/PEXPlugins/PermissionsEx
 <br>
 https://github.com/EssentialsX/Essentials/releases
 <br>
