@@ -26,6 +26,8 @@ https://github.com/TheBlackEntity/PlugMan/
 https://www.spigotmc.org/resources/titlemanager.1049/
 <br>
 https://www.spigotmc.org/resources/nametagedit.3836/
+<br>
+https://www.spigotmc.org/resources/viaversion.19254/
 
 ## Fun
 Плата за регионы https://www.spigotmc.org/resources/world-guard-region-claim.58723
