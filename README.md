@@ -11,6 +11,8 @@ ngrok tcp 25565
 ```
 ## Прочее
 https://textgenerator.ru/
+<br>
+https://prettyfont.net/
 
 ＡＢＣＤＥＦＧＨＩＪＫＬＭＬＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ
 
