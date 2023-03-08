@@ -1,19 +1,19 @@
 # -------------------------------------------------------------------------------
-# This is the implementation of ChatControl's rule engine codenamed ChatCeaser
+# Это реализация механизма правил ChatControl под кодовым названием ChatCeaser
 #
-# It accepts following operators (The <> is the parameter you'll specify)
-# match <regex> (A valid regular expression to match player's message.)
-# id <number/string> (Assign an id/name to the rule. Used in messages and handlers.)
-# ignore string <string/regex> (If the message matches the given string it will be ignored.)
-# ignore event <chat/commands/signs> (If the rule triggers on specified event it will be ignored.)
-# ignore perm <permission> (A permission to bypass the rule.)
-# ignore gamemode <survival/creative/adventure/spectator/0/1/2/3> (Gamemodes to be ignored. Separate by | to add multiple values.)
-# before strip <regex> (A regular expression used to strip specified characters before the message is checked.)
-# before replace <regex> with <message> (A regular expression to replace characters with other characters before the message check.)
-# then replace <replacement|replacement2> (A string that replaces only the part of the checked message that matches the match.)
-#                                         (Chosen randomly from the messages divided by |)
-# then rewrite <message|message2> (A message that replaces the entire checked message.)
-#                                         (Chosen randomly from the messages divided by |)
+# Он принимает следующие операторы (<> - это параметр, который вы будете указывать)
+# match <regex> (Правильное регулярное выражение для соответствия сообщению игрока).
+# id <число/строка> (Присваивает правилу идентификатор/имя. Используется в сообщениях и обработчиках).
+# ignore string <string/regex> (Если сообщение соответствует заданной строке, оно будет проигнорировано).
+# ignore event <chat/commands/signs> (Если правило срабатывает на указанное событие, оно будет проигнорировано).
+# ignore perm <разрешение> (Разрешение на обход правила.)
+# ignore gamemode <survival/creative/adventure/spectator/0/1/2/3> (Игровые режимы, которые будут игнорироваться. Разделите их | для добавления нескольких значений).
+# before strip <regex> (Регулярное выражение, используемое для удаления указанных символов перед проверкой сообщения).
+# before replace <regex> with <message> (Регулярное выражение для замены символов на другие символы перед проверкой сообщения).
+# then replace <replacement|replacement2> (Строка, заменяющая только ту часть проверяемого сообщения, которая соответствует заданному выражению).
+# (Выбирается случайным образом из сообщений, разделенных на |)
+# then rewrite <message|message2> (Сообщение, которое заменяет все проверяемое сообщение).
+# (Выбирается случайным образом из сообщений, разделенных |)
 # then deny (Cancel the player's message from appearing. See settinsg.yml for configuration on specific events.)
 # then console <command|command2|command3> (Commands to execute as the console. Use {player} to get player's name. Split multiple commands by |)
 # then warn <message> (A message sent to the player.)
