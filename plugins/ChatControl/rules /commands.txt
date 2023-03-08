@@ -10,7 +10,7 @@
 match ^/op\b
 ignore perm chatcontrol.bypass.rules
 id /op
-then warn &bYes, we are giving away OPs. Seriously, what did you expect?!
+then warn &bДа, мы раздаем ОП. Серьезно, а чего вы ожидали?!
 then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &f{message}
 then deny
 then log
