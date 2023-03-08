@@ -2,8 +2,8 @@ DataSource:
     # What type of database do you want to use?
     # Valid values: SQLITE, MYSQL, POSTGRESQL
     backend: SQLITE
-    # Enable the database caching system, should be disabled on bungeecord environments
-    # or when a website integration is being used.
+    # Включите систему кэширования базы данных, должна быть отключена в средах bungeecord.
+    # или когда используется интеграция с веб-сайтом.
     caching: true
     # Database host address
     mySQLHost: 127.0.0.1
@@ -97,20 +97,17 @@ ExternalBoardOptions:
     wordpressTablePrefix: wp_
 settings:
     sessions:
-        # Do you want to enable the session feature?
-        # If enabled, when a player authenticates successfully,
-        # his IP and his nickname is saved.
-        # The next time the player joins the server, if his IP
-        # is the same as last time and the timeout hasn't
-        # expired, he will not need to authenticate.
-        enabled: false
-        # After how many minutes should a session expire?
-        # A player's session ends after the timeout or if his IP has changed
+        # Хотите ли вы включить функцию сессии?
+        # Если включена, при успешной аутентификации игрока, его IP и никнейм сохраняются.
+        # При следующем подключении игрока к серверу, если его IP тот же, что и в прошлый раз, и тайм-аут не истек, ему не нужно будет проходить аутентификацию.
+        enabled: true
+        # Через сколько минут должна закончиться сессия?
+        # Сессия игрока заканчивается по истечении тайм-аута или если его IP изменился
         timeout: 10
-    # Message language, available languages:
+    # Язык сообщения, доступные языки:
     # https://github.com/AuthMe/AuthMeReloaded/blob/master/docs/translations.md
-    messagesLanguage: en
-    # Forces authme to hook into Vault instead of a specific permission handler system.
+    messagesLanguage: ru
+    # Заставляет authme подключаться к Vault вместо конкретной системы обработчика разрешений.
     forceVaultHook: false
     # Log level: INFO, FINE, DEBUG. Use INFO for general messages,
     # FINE for some additional detailed ones (like password failed),
@@ -122,9 +119,9 @@ settings:
     # The name of the server, used in some placeholders.
     serverName: Your Minecraft Server
     restrictions:
-        # Can not authenticated players chat?
-        # Keep in mind that this feature also blocks all commands not
-        # listed in the list below.
+        # Не могут ли аутентифицированные игроки общаться в чате?
+        # Имейте в виду, что эта функция также блокирует все команды, не
+        # перечисленных в приведенном ниже списке.
         allowChat: false
         # Hide the chat log from players who are not authenticated?
         hideChat: false
@@ -138,21 +135,20 @@ settings:
         - /captcha
         # Max number of allowed registrations per IP
         # The value 0 means an unlimited number of registrations!
-        maxRegPerIp: 1
+        maxRegPerIp: 2
         # Minimum allowed username length
         minNicknameLength: 3
         # Maximum allowed username length
         maxNicknameLength: 16
-        # When this setting is enabled, online players can't be kicked out
-        # due to "Logged in from another Location"
-        # This setting will prevent potential security exploits.
+        # Когда эта настройка включена, онлайн-игроки не могут быть выгнаны из игры из-за "входа с другого места".
+        # Эта настройка предотвращает потенциальные эксплойты безопасности.
         ForceSingleSession: true
         ForceSpawnLocOnJoin:
-            # If enabled, every player that spawn in one of the world listed in
-            # "ForceSpawnLocOnJoin.worlds" will be teleported to the spawnpoint after successful
-            # authentication. The quit location of the player will be overwritten.
-            # This is different from "teleportUnAuthedToSpawn" that teleport player
-            # to the spawnpoint on join.
+            # Если включено, каждый игрок, который спаунится в одном из миров, перечисленных в файле
+            # "ForceSpawnLocOnJoin.worlds", будет телепортирован в точку спавна после успешной
+            # аутентификации. Место выхода игрока из игры будет перезаписано.
+            # Это отличается от команды "teleportUnAuthedToSpawn", которая телепортирует игрока
+            # в точку спавна при присоединении.
             enabled: false
             # WorldNames where we need to force the spawn location
             # Case-sensitive!
@@ -162,8 +158,8 @@ settings:
             - world_the_end
         # This option will save the quit location of the players.
         SaveQuitLocation: false
-        # To activate the restricted user feature you need
-        # to enable this option and configure the AllowedRestrictedUser field.
+        # Для активации функции ограниченного пользователя вам необходимо.
+        # включить эту опцию и настроить поле AllowedRestrictedUser.
         AllowRestrictedUser: false
         # The restricted user feature will kick players listed below
         # if they don't match the defined IP address. Names are case-insensitive.
@@ -441,9 +437,9 @@ Purge:
     removePermissions: false
 Security:
     SQLProblem:
-        # Stop the server if we can't contact the sql database
-        # Take care with this, if you set this to false,
-        # AuthMe will automatically disable and the server won't be protected!
+        # Остановите сервер, если мы не можем связаться с базой данных sql.
+        # Будьте осторожны с этим, если вы установите значение false,
+        # AuthMe автоматически отключится и сервер не будет защищен!
         stopServer: true
     console:
         # Copy AuthMe log output in a separate file as well?
@@ -555,8 +551,8 @@ Converter:
         # CrazyLogin database file name
         fileName: accounts.db
     loginSecurity:
-        # LoginSecurity: convert from SQLite; if false we use MySQL
-        useSqlite: true
+        # LoginSecurity: преобразование из SQLite; если false, то мы используем MySQL
+        useSqlite: false
         mySql:
             # LoginSecurity MySQL: database host
             host: ''
