@@ -382,7 +382,7 @@ Hooks:
     useEssentialsMotd: false
 Protection:
     enableProtection: false    # Включите некоторую защиту серверов (вход на основе страны, антибот)
-    enableProtectionRegistered: true    # Применить защиту также к зарегистрированным именам пользователей
+    enableProtectionRegistered: false    # Применить защиту также к зарегистрированным именам пользователей
     geoIpDatabase:
         # The MaxMind clientId used to download the GeoIp database,
         # get one at https://www.maxmind.com/en/accounts/current/license-key
@@ -560,4 +560,3 @@ Converter:
             user: ''
             # LoginSecurity MySQL: password for database user
             password: ''
-
