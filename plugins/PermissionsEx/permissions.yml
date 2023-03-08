@@ -5,6 +5,8 @@ groups:
       prefix: '&r[&7Гей&r] '
     permissions:
     - modifyworld.*
+    - essentials.home
+    - essentials.help
   blue:
     options:
       default: true
