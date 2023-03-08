@@ -38,21 +38,21 @@ config-version: 7
 # Toggles debug mode, which prints additional information when the plugin does something.
 debug: false
 
-# Toggles whether or not all of the features of TitleManager will be toggled.
+# Переключает, будут ли переключены все функции TitleManager.
 using-config: true
 
 # Toggles whether or not all of the BungeeCord functionality will be toggled.
 using-bungeecord: false
 
-# (Feature only works on 1.7-1.8 Protocol Hack)
-# Toggles whether or not 1.7 players will see actionbar messages when they're holding an item.
+# (Функция работает только на 1.7-1.8 Protocol Hack)
+# Переключает, будут ли игроки 1.7 видеть сообщения на панели действий, когда они держат предмет.
 legacy-client-support: false
 
 # Toggles whether or not the plugin should warn administrators if there's a new version out.
 check-for-updates: true
 
 # The locale used for some of the placeholders.
-locale: 'en-US'
+locale: 'ru-RU'
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -60,41 +60,37 @@ locale: 'en-US'
 # +------------------------------------------------------+ #
 ############################################################
 
-# Sets the header and footer of the player list. (Shown when you hold the TAB key.)
-
-player-list:
-
-  # Toggles this feature.
+player-list:  # Устанавливает верхний и нижний колонтитулы списка плееров. (Отображается при нажатой клавише TAB).
   enabled: true
 
-  # Sets the header of the player list.
+  # Устанавливает заголовок списка игроков.
   #
-  # Single line format.
-  # header: 'My header text'
+  # Однострочный формат.
+  # header: 'Мой текст заголовка'
   #
-  # Multiple line format.
+  # Многострочный формат.
   # header:
-  # - 'My first line'
-  # - 'My second line'
-  # - 'My third line'
+  # - 'Моя первая строка'
+  # - 'Моя вторая строка'
+  # - 'Моя третья строка'
   header:
   - ''
   - '${shine:[0;2;0][0;25;0][0;25;0][&3;&b]My Server}'
   - ''
 
-  # Sets the footer of the player list.
+  # Устанавливает нижний колонтитул списка игроков.
   #
-  # Single line format.
-  # footer: 'My footer text'
+  # Однострочный формат.
+  # footer: 'Мой текст нижнего колонтитула'
   #
-  # Multiple line format.
+  # Многострочный формат.
   # footer:
-  # - 'My first line'
-  # - 'My second line'
-  # - 'My third line'
+  # - 'Моя первая строка'
+  # - 'Моя вторая строка'
+  # - 'Моя третья строка'
   footer:
   - ''
-  - '&7World time: &b%{12h-world-time}'
+  - '&7World time: &b%{24h-world-time}'
   - '&7Server time: &b%{server-time}'
   - ''
   - '${right-to-left} &b%{online}&7/&b%{max} &7Online Players ${left-to-right}'
@@ -108,20 +104,14 @@ player-list:
 # Sets the title that is sent to the player when they join the server.
 
 welcome-title:
-
-  # Toggles this feature.
   enabled: true
+  title: 'Добро пожаловать в говно'
+  subtitle: 'Место где рождается ремнант и книги пиши фреди'
 
-  # The title shown.
-  title: 'Welcome to My Server'
-
-  # The subtitle shown.
-  subtitle: 'Hope you enjoy your stay'
-
-  # The time it takes for the title to fade into the screen. (In ticks)
+  # Время, за которое заголовок исчезает на экране. (В тиках)
   fade-in: 20
 
-  # The time it takes for the title to stay on the screen. (In ticks)
+  # Время, в течение которого заголовок остается на экране. (В тиках)
   stay: 40
 
   # The time it takes for the title to fade out of the screen. (In ticks)
@@ -173,9 +163,7 @@ placeholders:
 
   # The format used by the balance placeholder.
   number-format:
-
-    # Toggles this feature.
-    enabled: true
+    enabled: false
 
     # The format used.
     format: '#,###.##'
@@ -193,8 +181,6 @@ placeholders:
 # Sets the scoreboard (sidebar) that is sent to the player
 
 scoreboard:
-
-  # Toggles this feature
   enabled: true
 
   # The title displayed at the very top of the scoreboard
@@ -228,9 +214,7 @@ scoreboard:
 # Automatically send titles and/or actionbar messages to the players on the server.
 
 announcer:
-
-  # Toggles this feature.
-  enabled: true
+  enabled: false
 
   # The announcements
   #
