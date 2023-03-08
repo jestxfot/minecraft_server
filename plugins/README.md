@@ -1,7 +1,9 @@
 ## Dependent libraries
-<img src="https://i.imgur.com/soNL4fA.png" width=20px> https://www.spigotmc.org/resources/vault.34315/
+### <img src="https://i.imgur.com/soNL4fA.png" width=20px> Vault
+https://www.spigotmc.org/resources/vault.34315/
 <br>
-<img src="https://i.imgur.com/ghnxXsv.png" width=20px> https://www.spigotmc.org/resources/protocollib.1997/ (https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/ 1.19+)
+### <img src="https://i.imgur.com/ghnxXsv.png" width=20px> ProtocolLib
+https://www.spigotmc.org/resources/protocollib.1997/ (https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/ 1.19+)
 <br>
 https://www.spigotmc.org/resources/placeholderapi.6245/
 
