@@ -10,6 +10,8 @@ java -Xmx4096M -Xms4096M -jar server.jar nogui
 ngrok tcp 25565 
 ```
 ## Прочее
+https://textgenerator.ru/
+
 ＡＢＣＤＥＦＧＨＩＪＫＬＭＬＮＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ
 
 ![image](https://user-images.githubusercontent.com/87380272/139599480-07e302b1-b953-4635-85af-d4233d31adc5.png)
