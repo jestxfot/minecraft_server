@@ -10,7 +10,7 @@ https://www.spigotmc.org/resources/placeholderapi.6245/
 
 ## Admin
 
-https://github.com/PEXPlugins/PermissionsEx
+https://github.com/PEXPlugins/PermissionsEx - устаревший плагин, ломает discord и новые версии essentials
 <br>
 https://github.com/EssentialsX/Essentials/releases
 <br>
