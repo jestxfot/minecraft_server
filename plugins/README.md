@@ -33,6 +33,8 @@ https://www.spigotmc.org/resources/titlemanager.1049/
 <br>
 https://www.spigotmc.org/resources/tab-1-5-1-20-4.57806/
 <br>
+https://www.spigotmc.org/resources/animated-tab-tablist.46229/
+<br>
 https://www.spigotmc.org/resources/nametagedit.3836/
 <br>
 https://www.spigotmc.org/resources/viaversion.19254/
