@@ -1,15 +1,15 @@
 ### Dependent libraries
-#### <img src="https://i.imgur.com/soNL4fA.png" width=20px> Vault
+#### <img src="https://i.imgur.com/soNL4fA.png" width="15px"> Vault
 https://www.spigotmc.org/resources/vault.34315/
 
 #### ProtocolLib
 https://www.spigotmc.org/resources/protocollib.1997/ (https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/ 1.19+)
 
-#### <img src="https://i.imgur.com/ghnxXsv.png" width=20px> PlaceholderAPI
+#### <img src="https://i.imgur.com/ghnxXsv.png" width="15px"> PlaceholderAPI
 https://www.spigotmc.org/resources/placeholderapi.6245/
 
 ### GUI Menu
-#### <img src="https://i.imgur.com/jvb2fCu.png" width=20px> DeluxeMenus
+#### <img src="https://i.imgur.com/jvb2fCu.png" width="15px"> DeluxeMenus
 https://www.spigotmc.org/resources/deluxemenus.11734/
 
 ### Admin
