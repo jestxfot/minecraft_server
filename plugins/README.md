@@ -23,6 +23,8 @@ https://dev.bukkit.org/projects/worldguard/files (*нужен WorldEdit!*)
 <br>
 https://github.com/AuthMe/AuthMeReloaded
 <br>
+https://github.com/Minecrell/ServerListPlus
+<br>
 https://www.spigotmc.org/resources/motd-1-8-1-15.8390
 <br>
 ChatControl (аналог ChatGuard и Chatty и ChatEx): https://github.com/kangarko/ChatControl-Free (нужен Vault!)
