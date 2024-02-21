@@ -8,6 +8,9 @@ https://www.spigotmc.org/resources/protocollib.1997/ (https://ci.dmulloy2.net/jo
 ### <img src="https://i.imgur.com/ghnxXsv.png" width=20px> PlaceholderAPI
 https://www.spigotmc.org/resources/placeholderapi.6245/
 
+### <img src="https://i.imgur.com/jvb2fCu.png" width=20px> DeluxeMenus
+https://www.spigotmc.org/resources/deluxemenus.11734/
+
 ## Admin
 ❌ Outdated plugin, breaks DiscordSVR and newer versions of Essentials ~https://github.com/PEXPlugins/PermissionsEx~
 <br>
