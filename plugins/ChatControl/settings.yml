@@ -112,7 +112,7 @@ Chat:
 
     # If Ranged_Mode is enabled, this format is used when a message is printed to the global chat by prefixing it with '!'
     # NB: Player must also have the 'chatcontrol.chat.global' permission to speak to the global chat.
-    Global_Message_Format: '&8[GLOBAL]&f {player_prefix}{nickname}:{player_suffix} {message}'
+    Global_Message_Format: '&8[GLOBAL]&f {player_prefix}{nickname} ➾ {player_suffix} {message}'
 
     # If Ranged_Mode is enabled, this format is used when a player with 'chatcontrol.chat.spy' permission receives ranged message
     # that he normally should't see.
@@ -169,7 +169,7 @@ Messages:
     Random_No_Repeat: true
     
     # Prefix and suffix supports variables {player} (player name) and {world} (world name)
-    Prefix: '&c&lСЕРВЕР &8[&eВася&8]&r:'
+    Prefix: '&c&lСЕРВЕР &8[&eВася&8]&r ➾'
     Suffix: ''
     Delay_Seconds: 50000
 
