@@ -108,7 +108,7 @@ Chat:
 
     # Default chat message format.
     # The prefix has to include the 'pl_' because without it the plugin's prefix name will be given instead.
-    Message_Format: '{player_prefix}&8[&r{nick}&8]&r:{player_suffix} {message}'
+    Message_Format: '{player_prefix}&8[&r{nick}&8]&r ➾ {player_suffix} {message}'
 
     # If Ranged_Mode is enabled, this format is used when a message is printed to the global chat by prefixing it with '!'
     # NB: Player must also have the 'chatcontrol.chat.global' permission to speak to the global chat.
@@ -117,7 +117,7 @@ Chat:
     # If Ranged_Mode is enabled, this format is used when a player with 'chatcontrol.chat.spy' permission receives ranged message
     # that he normally should't see.
     # To spy on private messages (e.g. /tell or /mail), use Essentials /socialspy feature.
-    Spy_Message_Format: '&8SPY: [{world}&8]&f {player_prefix}{player}:{player_suffix} {message}'
+    Spy_Message_Format: '&8SPY: [{world}&8]&f {player_prefix}{player} ➾ {player_suffix} {message}'
 
     # If enabled and a players write a message, it will only be sent to players
     # within distance of the player specified in Range
