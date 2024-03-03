@@ -51,7 +51,7 @@ Anti_Caps:
 Anti_Spam:
   Similarity_Check:
     Ignore_Special_Characters: true
-    Ignore_Duplicate_Characters: false
+    Ignore_Duplicate_Characters: true
     
     # If enabled, the first and second arguments in longer commands will be ignored.
     # This makes the check less annoying in messages like /tell <player> message
@@ -60,12 +60,12 @@ Anti_Spam:
 
   Commands:
     # Delay in seconds. Set to 0 to disable.
-    Delay_Between_Commands: 2
+    Delay_Between_Commands: 0
     
-    # Если сообщение похоже (в процентах) на предыдущее, блокируйте его.
-    # Установите значение 0 или 100, чтобы отключить.
-    # Мы помним, что команды типа /tell всегда включают имя, что делает проверку менее раздражающей.
-    Similar_Percentage_Block: 0
+    # If a message is similar (in percents) to the previous one, block it.
+    # Set to 0 or 100 to disable.
+    # We keep in mind that commands like /tell includes always name, making the check less annonying.
+    Similar_Percentage_Block: 80
  
     # Commands ignored from the delay check.
     Whitelist_Similarity:
@@ -82,7 +82,7 @@ Anti_Spam:
 
   Chat:
     # Delay in seconds. Set to 0 to disable.
-    Delay_Between_Messages: 1
+    Delay_Between_Messages: 0
 
     # If a command is similar (in percents) to the previous one, block it.
     # Set to 0 or 100 to disable.
@@ -108,31 +108,35 @@ Chat:
 
     # Default chat message format.
     # The prefix has to include the 'pl_' because without it the plugin's prefix name will be given instead.
-    Message_Format: '{pl_prefix}{nick} ➾{pl_suffix} {message}'
+    Message_Format: '{player_prefix}&8[&r{nick}&8]&r:{player_suffix} {message}'
 
     # If Ranged_Mode is enabled, this format is used when a message is printed to the global chat by prefixing it with '!'
     # NB: Player must also have the 'chatcontrol.chat.global' permission to speak to the global chat.
-    Global_Message_Format: '&e[G]&f {pl_prefix}{nick} ➾{pl_suffix} {message}'
+    Global_Message_Format: '&8[GLOBAL]&f {player_prefix}{nickname}:{player_suffix} {message}'
 
     # If Ranged_Mode is enabled, this format is used when a player with 'chatcontrol.chat.spy' permission receives ranged message
     # that he normally should't see.
     # To spy on private messages (e.g. /tell or /mail), use Essentials /socialspy feature.
-    Spy_Message_Format: '&8SPY: [{world}&8]&f {pl_prefix}{nick} ➾{pl_suffix} {message}'
+    Spy_Message_Format: '&8SPY: [{world}&8]&f {player_prefix}{player}:{player_suffix} {message}'
 
     # If enabled and a players write a message, it will only be sent to players
     # within distance of the player specified in Range
-    Ranged_Mode: true
+    Ranged_Mode: false
     
     # If you want the range for entire world, give everyone chatcontrol.chat.overrideranged permission.
     Range: 100.0
 
   Grammar:
-    Insert_Dot: # Пунктуация в каждом предложении. Игнорирует URL-адреса.
+    # Punctualize every sentence. Ignores URLs.
+    Insert_Dot:
       Enabled: true
       Min_Message_Length: 5
-    Capitalize: # Сделать первую букву предложения большой. Игнорирует URL-адреса.
+
+    # Make the first letter of a sentence big. Ignores URLs.
+    Capitalize:
       Enabled: true
       Min_Message_Length: 5
+
 Clear:
   # Broadcast that the chat was wiped?
   Broadcast: true
@@ -144,11 +148,11 @@ Clear:
   Console_Lines_To_Clear: 300
 
 Messages:
-  # Используйте 'default', чтобы не изменять, 'hide', чтобы не отображать или написать пользовательское сообщение.
-  # Переменные: {player} {pl_suffix} {pl_prefix} (когда установлен Vault)
-  # {countrycode} и {countryname}, если установлен AuthMe
-  Join: '&a&l+ &r{pl_suffix}{player} заремнантился!'
-  Quit: '&c&l- &r{pl_suffix}{player} схлопнулся!'
+  # Use 'default' to not modify, 'hide' to not display or write a custom message
+  # Variables: {player} {player_suffix} {player_prefix} (when Vault is installed)
+  #            and {country_code} and {country_name} 
+  Join: '&a&l+&r {player_prefix}{player} присоединился в нашу ганджен пати!'
+  Quit: '&c&l-&r {player_prefix}{player} ушёл с нашей ганджен пати!'
   Kick: default
   
   # Needs AuthMe-Reloaded. Only display quit message when the player has logged.
@@ -157,7 +161,7 @@ Messages:
 
   # Automatic message broadcaster.
   Timed:
-    Enabled: false
+    Enabled: true
     Random_Order: false
     
     # If random order is enabled, the messages will be put in a cache and not repeat until the cache is empty,
@@ -165,19 +169,16 @@ Messages:
     Random_No_Repeat: true
     
     # Prefix and suffix supports variables {player} (player name) and {world} (world name)
-    Prefix: '&8[&2Tip&8]&2'
+    Prefix: '&c&lСЕРВЕР &8[&eВася&8]&r:'
     Suffix: ''
-    Delay_Seconds: 180
+    Delay_Seconds: 50000
 
     # Timed messages per worlds.
     # By default every world includes global messages.
     Message_List:
-      
       # Messages displayed in all worlds.
       global:
-      - Hey, {player}, did you know that this server is running ChatControl?
-      - 'Visit developer website: &ahttps://goo.gl/CT3Zdl'
-      
+      - '&rХей, &l{player}, &rне забывай о нашем дискорде &Lhttps://discord.gg/RF7wVyPB8a'
       # In this world will be displayed both global messages and these specified below.
       hardcore:
       - Grief is not permitted what-so-ever and every griefer will be banned.
@@ -247,25 +248,17 @@ Rules:
   # Needs ProtocolLib. If enabled, messages will be checked against rules/packets.txt
   # which supports replacing even bukkit / plugin messages.
   # Won't work on Minecraft 1.19 and up. Upgrade to mineacademy.org/chatcontrol-red for new MC support.
-  Check_Packets: true
-  
-  Packets:
-  
-    # Since Minecraft 1.7x, every message is a chat component. Unpacking it will bring better/more expected results.
-    # Disable if experiencing issues with chat formatting plugins. Messages with hover/click effects won't be checked.
-    Deserialize_Json: true
+  Check_Packets: false
 
 Console:
   Filter:
-    # Filter console messages specified below?
+    # Filter console messages specified below? *Some messages you filter can conflict with Multicraft panels!!*
     Enabled: true
     
     # Remove certain messages from the server console.
     # Does not need to be whole message, just a part of the message you want to block.
     Filter_Console_Messages:
     - Reached end of stream for
-    - Connection reset
-    - lost connection
 
 Signs:
   Duplication:
@@ -331,16 +324,9 @@ Groups:
       Leave_Message: "&6[VIP] &e{player} has left the game"
       Kick_Message: none
 
-Updater:
-  Enabled: true
-  Notify: true
-  Download: true
-  
-  # Disable important announcements after the plugin has been loaded
-  Check_Notes: true
-
+# Save chat communication to a file?
 Writer:
-  # Save chat to file?
+  # Enabled?
   Write_Chat_Communication: true
   Strip_Colors: true
 
@@ -399,7 +385,7 @@ Reset_Cache_On_Quit: false
 # Before that, please ensure you've saved the file in an encoding that supports new line operator.
 Enforce_New_Line: false
 
-# Search for players geographical information for {countryname} and {countrycode} variables?
+# Search for players geographical information for {country_name} and {country_code} variables?
 # Disable to improve performance a tiny bit.
 Lookup_Geo_Data: true
 
