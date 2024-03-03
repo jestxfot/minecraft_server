@@ -155,44 +155,44 @@ Messages:
   Quit: '&c&l-&r {player_prefix}{player} ушёл с нашей ганджен пати!'
   Kick: default
   
-  # Needs AuthMe-Reloaded. Only display quit message when the player has logged.
-  # You can disable displaying join message in AuthMe itself by enabling 'delayJoinMessage' in its config
+  # Требуется AuthMe-Reloaded. Отображение сообщения о выходе только после того, как игрок вошел в систему.
+  # Вы можете отключить отображение сообщения о присоединении в самом AuthMe, включив 'delayJoinMessage' в его конфигурации
   Show_Quit_Only_When_Logged: true
 
-  # Automatic message broadcaster.
+  # Автоматическая передача сообщений.
   Timed:
     Enabled: true
     Random_Order: false
     
-    # If random order is enabled, the messages will be put in a cache and not repeat until the cache is empty,
-    # then it will be filled again and so on.
-    Random_No_Repeat: true
+    # Если включен случайный порядок, сообщения будут помещаться в кэш и не повторяться до тех пор, пока кэш не опустеет,
+    # затем он будет заполнен снова и так далее.
+    Random_No_Repeat: false
     
-    # Prefix and suffix supports variables {player} (player name) and {world} (world name)
+    # Префикс и суффикс поддерживает переменные {player} (имя игрока) и {world} (имя мира)
     Prefix: '&c&lСЕРВЕР &8[&eВася&8]&r ➾'
     Suffix: ''
-    Delay_Seconds: 50000
+    Delay_Seconds: 120
 
-    # Timed messages per worlds.
-    # By default every world includes global messages.
+    # Таймерные сообщения для миров.
+    # По умолчанию каждый мир включает глобальные сообщения.
     Message_List:
-      # Messages displayed in all worlds.
+      # Сообщения, отображаемые во всех мирах.
       global:
       - '&rХей, &l{player}, &rне забывай о нашем дискорде &Lhttps://discord.gg/RF7wVyPB8a'
-      # In this world will be displayed both global messages and these specified below.
+      # В этом мире будут отображаться как глобальные сообщения, так и указанные ниже.
       hardcore:
       - Grief is not permitted what-so-ever and every griefer will be banned.
       - Can you survive the night on {world} world?
       
-      # In this world will be displayed messages included from hardcore world.
+      # В этом мире будут отображаться сообщения, поступившие из мира хардкора.
       hardcore_nether:
       - includeFrom hardcore
       
-      # No messages will be broadcasted in this world.
+      # В этом мире не будет передаваться никаких сообщений.
       ignored-world:
       - excludeGlobal
       
-      # Global messages will no be displayed in this world.
+      # Глобальные сообщения не будут отображаться в этом мире.
       creative:
       - excludeGlobal
       - Welcome on Creative world. Enjoy your gamemode :)
@@ -201,7 +201,7 @@ Mute:
   # Broadcast that the chat was mute?
   Broadcast: true
 
-  # Hide the following messages when the chat is muted
+  # Скрыть следующие сообщения при отключении звука в чате
   Silence:
     Join_Messages: true
     Quit_Messages: true
@@ -363,22 +363,22 @@ Regex_Timeout_Milis: 100
 # vi (Vietnamese), ro (Romanian), pl (Polish) and cn (Chinese)
 Locale: en
 
-# Time of some plugin's operations is measured.
-# Print a message in the console if they take longer than specified millisecond time.
-# Set to 0 to disable.
+# Измеряется время выполнения некоторых операций плагина.
+# Вывод сообщения в консоль, если они занимают больше указанного времени в миллисекундах.
+# Установите значение 0, чтобы отключить.
 Log_Lag_Over_Milis: 100
 
-# If a message was caught by a rule print info to the console.
-# It is possible to hide individual packet rules from appearing
-# with "dont verbose" operators. This currently works only on packet rules.
+# Если сообщение было поймано правилом, выведите информацию в консоль.
+# Можно скрыть от просмотра отдельные пакетные правила
+# с помощью оператора "dont verbose". В настоящее время это работает только для пакетных правил.
 Verbose_Rules: true
 
-# Removes certain messages from startup (reduces spam in the console)
-# If you are having any issues, disable this and enable Verbose and Debug.
+# Удаляет определенные сообщения при запуске (уменьшает количество спама в консоли)
+# Если у вас возникли проблемы, отключите это и включите Verbose и Debug.
 Silent_Startup: true
 
-# Plugin saves some player data, such as their last message or command + date of writing them, for antispam to use.
-# You can decide if these data should be reset when the player quits. Recommended in lobby (when on bungee), but not elsewhere.
+# Плагин сохраняет некоторые данные игрока, такие как его последнее сообщение или команда + дата его написания, для использования антиспамом.
+# Вы можете решить, должны ли эти данные сбрасываться, когда игрок выходит из игры. Рекомендуется в лобби (когда игрок на тарзанке), но не в других местах.
 Reset_Cache_On_Quit: false
 
 # Set to true if the \n operator does not work for you.
@@ -389,7 +389,7 @@ Enforce_New_Line: false
 # Disable to improve performance a tiny bit.
 Lookup_Geo_Data: true
 
-# Enable if you are having issues, will tell you detailed info in the console.
+# Включите, если у вас возникли проблемы, и вы получите подробную информацию в консоли.
 Debug: false
 
 # Do not change this value, otherwise it will corrupt your plugin installation!
