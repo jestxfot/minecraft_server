@@ -1,25 +1,25 @@
 # -----------------------------------------------------------------------
-#         Welcome to the main configuration of ChatControl
+# Добро пожаловать в основную конфигурацию ChatControl
 # -----------------------------------------------------------------------
-# [General support and updates]
+# [Общая поддержка и обновления]
 # http://www.spigotmc.org/resources/chatcontrol.271
 # 
-# [Default configuration with comments]
+# [Конфигурация по умолчанию с комментариями]
 # https://github.com/kangarko/ChatControl/blob/master/settings.yml
 #
-# [Tips]
-# - Color codes are supported with the '&' character, see
-#   http://minecraftwiki.net/wiki/Formatting_codes for usage
+# [Советы]
+# - Цветовые коды поддерживаются с помощью символа '&', см.
+# http://minecraftwiki.net/wiki/Formatting_codes для использования
 #
-# - To not display a message, set it to 'none'.
+# - Чтобы не отображать сообщение, установите для него значение 'none'.
 #
-# - Unicode /special characters/ only work when files are saved in 
-#   UTF-8 encoding. Tested on Notepad++, WordPad on Windows is broken.
+# - Юникод /специальные символы/ работают только при сохранении файлов в 
+# кодировке UTF-8. Проверено на Notepad++, WordPad под Windows не работает.
 #
-# - Most of the messages (warnings, etc) are found in the localization. 
-#   To customize it, make a new file in "localization/messages_LOCALE.yml" 
-#   (Replace LOCALE with the actuall locale name, by default 'en'). It
-#   will be filled with all default values and kept with sync on updates.
+# - Большинство сообщений (предупреждений и т. д.) находятся в локализации. 
+# Чтобы настроить ее, создайте новый файл в "localization/messages_LOCALE.yml" 
+# (Замените LOCALE на имя действующей локали, по умолчанию 'en'). Он
+# будет заполнен всеми значениями по умолчанию и синхронизирован при обновлении.
 # -----------------------------------------------------------------------
 
 Anti_Bot:
