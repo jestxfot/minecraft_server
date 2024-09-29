@@ -1,0 +1,37 @@
+menu_title: '&aВыберите мир'
+size: 9
+open_command:
+  - 'world' # команда для открытия меню
+
+items:
+  world_1:
+    material: GRASS_BLOCK
+    slot: 0
+    display_name: '&aМир выживания'
+    lore:
+      - '&7Нажмите, чтобы перейти в мир выживания'
+    left_click_commands:
+      - '[player] mv tp world'
+      - '[console] bc Телепортируем %player_name% в &c&lмир выживания...'
+    update: true
+
+  world_2:
+    material: STONE
+    slot: 1
+    display_name: '&bМир креатива'
+    lore:
+      - '&7Нажмите, чтобы перейти в мир креатива'
+    left_click_commands:
+      - '[player] mv tp creative'
+      - '[console] bc Телепортируем %player_name% в &a&lмир креатива...'
+    update: true
+
+  close_button:
+    material: BARRIER
+    slot: 8
+    display_name: '&cЗакрыть'
+    lore:
+      - '&7Нажмите, чтобы закрыть меню'
+    left_click_commands:
+      - '[console]'
+    update: true
