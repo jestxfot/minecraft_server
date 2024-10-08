@@ -80,7 +80,7 @@ ExternalBoardOptions:
     # Other MySQL columns where we need to put the username (case-sensitive)
     mySQLOtherUsernameColumns: []
     # How much log2 rounds needed in BCrypt (do not change if you do not know what it does)
-    bCryptLog2Round: 10
+    bCryptLog2Round: 12
     # phpBB table prefix defined during the phpBB installation process
     phpbbTablePrefix: phpbb_
     # phpBB activated group ID; 2 is the default registered group defined by phpBB
