@@ -1,0 +1,40 @@
+# ----------------------------[ AdvancedSetSpawn v2.5 ]---------------------------- by iLiroSQ
+# Conditions:
+# bypass-cooldown-ops (true/false) removes the cooldown on spawn request by permission.
+# check-location (true/false) before teleporting check if player has teleported
+# TIP > I recommend using this with onMoveEvent to avoid players bypassing it...
+# cooldown (In seconds) how much the player will wait until he got teleported to the spawn point.
+# period-nofalldamage (In seconds) starts when a player was recently teleported in to the spawn.
+# prevent-falldamage (true/false) it will only prevent for the first fall damage you get
+#                                 after teleported to the spawn point.
+# prevent-tpall-ops (true/false) if u have "aspawn.notpall" permission u will avoid going to the spawn.
+# spawn-onDeath (true/false) sends a player to the spawn before they die...
+# spawn-onJoin (true/false) sends a player to the spawn when they join to the server
+# spawn-onVoid (true/false) sends a player to the spawn if they fall in the void.
+# Toggle:
+# aspawn-permission (true/false) toggles the access to the /aspawn command.
+# disable-onMoveEvent (true/false) Check if player moved at least 1 block, this was optimized...
+# TIP > If you don't want this event, cause lag or its unnecessary so set it to true.
+#       If you disabled this (true) your players will be able to move on teleport request.
+# ---------------------------------------------------------------------------------------------
+Conditions:
+  bypass-cooldown-ops: true
+  check-location: true
+  cooldown: 3
+  period-nofalldamage: 2
+  prevent-falldamage: true
+  prevent-tpall-ops: false
+  spawn-onDeath: true
+  spawn-onJoin: false
+  spawn-onVoid: false
+Toggle:
+  aspawn-permission: true
+  spawn-permission: false
+  disable-onMoveEvent: false
+  enable-setfirstspawn-command: true
+  enable-setspawn-command: true
+Sound:
+  enabled: true
+  music: "LEVEL_UP"
+  volume: 5
+  pitch: 0
