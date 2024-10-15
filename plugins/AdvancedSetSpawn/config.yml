@@ -20,7 +20,7 @@
 Conditions:
   bypass-cooldown-ops: true
   check-location: false
-  cooldown: 3
+  cooldown: 0
   period-nofalldamage: 2
   prevent-falldamage: true
   prevent-tpall-ops: false
