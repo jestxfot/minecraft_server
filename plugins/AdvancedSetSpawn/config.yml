@@ -1,21 +1,21 @@
 # ----------------------------[ AdvancedSetSpawn v2.5 ]---------------------------- by iLiroSQ
-# Conditions:
-# bypass-cooldown-ops (true/false) removes the cooldown on spawn request by permission.
-# check-location (true/false) before teleporting check if player has teleported
-# TIP > I recommend using this with onMoveEvent to avoid players bypassing it...
-# cooldown (In seconds) how much the player will wait until he got teleported to the spawn point.
-# period-nofalldamage (In seconds) starts when a player was recently teleported in to the spawn.
-# prevent-falldamage (true/false) it will only prevent for the first fall damage you get
-#                                 after teleported to the spawn point.
-# prevent-tpall-ops (true/false) if u have "aspawn.notpall" permission u will avoid going to the spawn.
-# spawn-onDeath (true/false) sends a player to the spawn before they die...
-# spawn-onJoin (true/false) sends a player to the spawn when they join to the server
-# spawn-onVoid (true/false) sends a player to the spawn if they fall in the void.
-# Toggle:
-# aspawn-permission (true/false) toggles the access to the /aspawn command.
-# disable-onMoveEvent (true/false) Check if player moved at least 1 block, this was optimized...
-# TIP > If you don't want this event, cause lag or its unnecessary so set it to true.
-#       If you disabled this (true) your players will be able to move on teleport request.
+# Условия:
+# bypass-cooldown-ops (true/false) снимает время ожидания на запрос телепортации к спавну при наличии соответствующих прав.
+# check-location (true/false) перед телепортацией проверяет, телепортировался ли игрок.
+# ПОДСКАЗКА > Рекомендую использовать это вместе с onMoveEvent, чтобы игроки не обходили проверку...
+# cooldown (В секундах) время, которое игрок будет ждать перед телепортацией к спавну.
+# period-nofalldamage (В секундах) начинается, когда игрок был недавно телепортирован к спавну.
+# prevent-falldamage (true/false) предотвращает только первый урон от падения, который игрок получит
+#                                 после телепортации к спавну.
+# prevent-tpall-ops (true/false) если у вас есть разрешение "aspawn.notpall", вы избежите телепортации к спавну.
+# spawn-onDeath (true/false) отправляет игрока к спавну перед его смертью.
+# spawn-onJoin (true/false) отправляет игрока к спавну при входе на сервер.
+# spawn-onVoid (true/false) отправляет игрока к спавну, если он падает в пустоту.
+# Переключатели:
+# aspawn-permission (true/false) включает или отключает доступ к команде /aspawn.
+# disable-onMoveEvent (true/false) проверяет, двигался ли игрок хотя бы на один блок, это оптимизировано...
+# ПОДСКАЗКА > Если вы не хотите, чтобы это событие вызывало лаги или было ненужным, установите значение true.
+#             Если вы отключили его (true), ваши игроки смогут двигаться при запросе телепортации.
 # ---------------------------------------------------------------------------------------------
 Conditions:
   bypass-cooldown-ops: true
