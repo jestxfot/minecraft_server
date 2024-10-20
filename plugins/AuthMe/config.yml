@@ -384,6 +384,7 @@ Protection:
     enableProtection: false    # Включите некоторую защиту серверов (вход на основе страны, антибот)
     enableProtectionRegistered: false    # Применить защиту также к зарегистрированным именам пользователей
     geoIpDatabase:
+        enabled: false
         # The MaxMind clientId used to download the GeoIp database,
         # get one at https://www.maxmind.com/en/accounts/current/license-key
         # The EssentialsX project has a very useful tutorial on how to generate
