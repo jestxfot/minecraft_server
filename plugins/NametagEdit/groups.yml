@@ -1,5 +1,9 @@
 Groups:
-  Default:
+  op:
+    Permission: nte.op
+    Prefix: '&r[&c&lOP&r] '
+    Suffix: '&f'
+  default:
+    Permission: nte.default
     Prefix: '&r[&7Гей&r] '
     Suffix: '&f'
-    SortPriority: 1
